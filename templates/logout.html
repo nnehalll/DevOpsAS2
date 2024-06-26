@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background: #f3f3f3;
+            flex-direction: column;
+            margin: 0;
+        }
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #AD794B;
+        }
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            background-color: #AD794B;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Logout</h1>
+        <p>Are you sure you want to log out?</p>
+        <form onsubmit="return redirectToHome()">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+    <script>
+        function redirectToHome() {
+            window.location.href = '/';
+            return false;
+        }
+    </script>
+</body>
+</html>

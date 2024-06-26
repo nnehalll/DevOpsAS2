@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #AD794B;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .info span {
+            font-weight: bold;
+        }
+
+        .logout {
+            margin-top: 20px;
+        }
+
+        .logout a {
+            text-decoration: none;
+            color: #AD794B;
+            font-weight: bold;
+        }
+
+        .logout a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Welcome, <span>{{ username }}</span>!</h1>
+        <div class="info">
+            <p>Your account details:</p>
+            <p><span>Email:</span> {{ email }}</p>
+            <p><span>Contact:</span> {{ mobile }}</p>
+            <p><span>Gender:</span> {{ gender }}</p>
+        </div>
+        <div class="logout">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
