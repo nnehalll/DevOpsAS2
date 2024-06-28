@@ -29,4 +29,4 @@
    - Configure Jenkins to connect to your Git repository.
 
  2. **Launching of App**:
-   - Take an updated pull of dockerrise application and launch it on port 5003 ,do the changes in git repo and take fresh pull in jenkins to make sure changes getting reflected on web browser
+       - Take an updated pull of dockerrise application and launch it on port 5003 ,do the changes in git repo and take fresh pull in jenkins to make sure changes getting reflected on web browser
